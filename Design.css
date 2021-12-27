@@ -1,238 +1,85 @@
-div.page{
-    position: fixed;
-    top: -0.5%;
-    left: -0.5%;
-    width: 100.5vw;
-    height: 100.5vh;
-    background: #f8dce0
+	
+html, body {
+  
+  width: 100%;
+  height:100%;
+  margin-left : auto;
+  margin-right : auto;
 }
-img.kadomatu1{
-    position: fixed;
-    bottom: 5%;
-    left: 5%;
-    width: 20%;
-
+.screen1{
+	position: absolute;
+	width: 100%;
+  height: 100%;
 }
-img.mouse1{
-    position: fixed;
-    bottom: 5%;
-    left: 45%;
-    width: 15%;
-    animation: mouse1_anime 1.5s ease-in-out 0s infinite alternate none running;
+.text1{
+	position: absolute;
+  width: 30vmin;
+  height: 30vmin;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto;
 }
-@keyframes mouse1_anime {
-    0% {
-      transform: scale(.8)rotate(35deg);
-    }
-    100% {
-      transform: scale(1) rotate(-35deg);
-    }
-}
-img.kadomatu2{
-    position: fixed;
-    bottom: 5%;
-    right: 5%;
-    width: 20%;
-}
-img.huzi{
-    position: fixed;
-    opacity: 90%;
-    bottom: 5%;
-    left: 13%;
-    width: 80%;
-}
-img.tako{
-  position: fixed;
-  bottom: 40%;
-  left: 40%;
-  width: 20%;
-  transform-origin: 50% 250%;
-  animation: 5s ease-in-out 0s infinite alternate none running tako_anime;
-}
-@keyframes tako_anime {
-  0% {
-    transform: rotate(-40deg);
-   }
-   100% {  
-     transform: rotate(40deg);
-   }
+.bg{
+  position: absolute;
+  height: 100vmin;
+  width: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto;
 }
 
-img.kumade1{
-    position: fixed;
-    top: 10%;
-    left: 5%;
-    width: 15%;
-    animation: kumade1_anime 1.5s ease-in-out 0s infinite alternate none running;
-}
-@keyframes kumade1_anime {
-    0% {
-      transform: scale(.8)rotate(35deg);
-    }
-    100% {
-      transform: scale(1) rotate(-35deg);
-    }
-}
-img.kumade2{
-    position: fixed;
-    top: 10%;
-    right: 5%;
-    width: 15%;
-    animation: kumade2_anime 1.5s ease-in-out 0s infinite alternate none running;
-}
-@keyframes kumade2_anime {
-    0% {
-      transform: scale(.8) rotate(-35deg);
-    }
-    100% {
-      transform: scale(1) rotate(35deg);
-    }
+.text1-1 {
+  /* 色はお好みで */
+  stroke: black;
+  font-family: "Yuji Syuku";
+  /* 色はお好みで */
+  fill: yellow;
+  /* 文字が大きい方がアニメーションが綺麗なので50pxを指定 */
+  font-size: 200px;
+  /* 100%だと最後まで表示されないので多めに設定する */
+  stroke-dasharray: 400%;
+  /* 線が細いほうがアニメーションが綺麗なので0.5pxを指定 */
+  stroke-width: 3px;
+  -webkit-animation: stroke-anim 5s linear;
+  animation: stroke-anim 5s linear;
 }
 
-@keyframes snowflakes-fall{
-  0%{top:-10%}
-  100%{top:100%}
+@-webkit-keyframes stroke-anim {
+0% {
+  /* 100%だと最後まで表示されないので多めに設定する */
+  stroke-dashoffset: 400%;
+  fill:transparent;
 }
-@keyframes snowflakes-shake{
-  0%{transform:translateX(0vw)}
-  50%{transform:translateX(10vw)}
-  100%{transform:translateX(0vw)}
+50% {
+  fill:transparent;
 }
-img.sakura1{
-  position:fixed;
-  top:-10%;
-  width: 5%;
-  left: 0%;
-  animation-name:snowflakes-fall,snowflakes-shake;
-  animation-duration:10s,3s;
-  animation-timing-function:linear,ease-in-out;
-  animation-iteration-count:infinite,infinite;
-  animation-play-state:running,running;
-  animation-delay: 3s;
+80% {
+  stroke-dashoffset: 0%;
+  fill:transparent;
 }
-img.sakura2{
-  position:fixed;
-  top:-10%;
-  width: 5%;
-  left: 10%;
-  animation-name:snowflakes-fall,snowflakes-shake;
-  animation-duration:10s,3s;
-  animation-timing-function:linear,ease-in-out;
-  animation-iteration-count:infinite,infinite;
-  animation-play-state:running,running;
-  animation-delay: 8s;
+100% {
+  fill:yellow;
 }
-img.sakura3{
-  position:fixed;
-  top:-10%;
-  width: 5%;
-  left: 20%;
-  animation-name:snowflakes-fall,snowflakes-shake;
-  animation-duration:10s,3s;
-  animation-timing-function:linear,ease-in-out;
-  animation-iteration-count:infinite,infinite;
-  animation-play-state:running,running;
-  animation-delay: 2s;
-}
-img.sakura4{
-  position:fixed;
-  top:-10%;
-  width: 5%;
-  left: 30%;
-  animation-name:snowflakes-fall,snowflakes-shake;
-  animation-duration:10s,3s;
-  animation-timing-function:linear,ease-in-out;
-  animation-iteration-count:infinite,infinite;
-  animation-play-state:running,running;
-  animation-delay: 4s;
-}
-img.sakura5{
-  position:fixed;
-  top:-10%;
-  width: 5%;
-  left: 40%;
-  animation-name:snowflakes-fall,snowflakes-shake;
-  animation-duration:10s,3s;
-  animation-timing-function:linear,ease-in-out;
-  animation-iteration-count:infinite,infinite;
-  animation-play-state:running,running;
-  animation-delay: 9s;
-}
-img.sakura6{
-  position:fixed;
-  top:-10%;
-  width: 5%;
-  left: 50%;
-  animation-name:snowflakes-fall,snowflakes-shake;
-  animation-duration:10s,3s;
-  animation-timing-function:linear,ease-in-out;
-  animation-iteration-count:infinite,infinite;
-  animation-play-state:running,running;
-  animation-delay: 5s;
-}
-img.sakura7{
-  position:fixed;
-  top:-10%;
-  width: 5%;
-  left: 60%;
-  animation-name:snowflakes-fall,snowflakes-shake;
-  animation-duration:10s,3s;
-  animation-timing-function:linear,ease-in-out;
-  animation-iteration-count:infinite,infinite;
-  animation-play-state:running,running;
-  animation-delay: 1s;
-}
-img.sakura8{
-  position:fixed;
-  top:-10%;
-  width: 5%;
-  left: 70%;
-  animation-name:snowflakes-fall,snowflakes-shake;
-  animation-duration:10s,3s;
-  animation-timing-function:linear,ease-in-out;
-  animation-iteration-count:infinite,infinite;
-  animation-play-state:running,running;
-  animation-delay: 6s;
-}
-img.sakura9{
-  position:fixed;
-  top:-10%;
-  width: 5%;
-  left: 80%;
-  animation-name:snowflakes-fall,snowflakes-shake;
-  animation-duration:10s,3s;
-  animation-timing-function:linear,ease-in-out;
-  animation-iteration-count:infinite,infinite;
-  animation-play-state:running,running;
-  animation-delay: 1s;
-}
-img.sakura10{
-  position:fixed;
-  top:-10%;
-  width: 5%;
-  left: 90%;
-  animation-name:snowflakes-fall,snowflakes-shake;
-  animation-duration:10s,3s;
-  animation-timing-function:linear,ease-in-out;
-  animation-iteration-count:infinite,infinite;
-  animation-play-state:running,running;
-  animation-delay: 7s;
 }
 
-
-
-div.arch{
-    position: fixed;
-    font-family: "Sawarabi Mincho";
-    font-size: 8vw;/* 36px*/
-    top: 5%;
-    left: 28%;
-    text-shadow:0.2vw 0.2vh 0.3vw #f00;
+@keyframes stroke-anim {
+0% {
+  /* 100%だと最後まで表示されないので多めに設定する */
+  stroke-dashoffset: 400%;
+  fill:transparent;
 }
-div.arch2{
-    position: fixed;
-    font-family: "Sawarabi Mincho";
-    font-size: 4vw;
-    top: 30%;
-    left: 20.5%;
-    text-shadow:0.2vw 0.2vh 0.3vw #f00;
+50% {
+  fill:transparent;
+}
+80% {
+  stroke-dashoffset: 0%;
+  fill:transparent;
+}
+100% {
+  fill:yellow;
+}
+}
