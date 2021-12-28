@@ -5,9 +5,8 @@
   イラスト:いらすとや(https://www.irasutoya.com/)
 -->
 <meta charset="UTF-8"/>
-<meta name="viewport" content="width=1461,height=2122" user-scalable=	no/>
 <title>HAPPY・NEW・YEAR 2022</title>
-<link rel="stylesheet" href="./Design.css">
+<link rel="stylesheet" href="Design.css">
 <link href="https://fonts.googleapis.com/css?family=Yuji+Syuku" rel="stylesheet">
 </head>
 <body>
@@ -63,5 +62,38 @@
     </div>
   </div>
 </main>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function () {
+    const resizeFix = function () {
+
+      var css_pc=document.createElement("link");
+      css_pc.setAttribute("rel","stylesheet");
+      css_pc.setAttribute("type","text/css");
+      css_pc.setAttribute("href","./Design-pc.css");
+      var css_sp=document.createElement("link");
+      css_sp.setAttribute("rel","stylesheet");
+      css_sp.setAttribute("type","text/css");
+      css_sp.setAttribute("href","./Design-sp.css");
+      
+
+        const checkHeight = window.innerWidth / 1920 * 1080;
+        const marginTop = window.innerHeight - checkHeight;
+        const checkWidth = window.innerHeight / 1080 * 1920;
+        const marginLeft = window.innerWidth - checkWidth;
+
+        if (window.innerWidth > window.innerHeight) { //
+          document.getElementsByTagName("head")[0].appendChild(css_pc);
+        } else {
+          document.getElementsByTagName("head")[0].appendChild(css_sp);
+        }
+    }
+
+    resizeFix();
+
+    window.addEventListener('resize', function () {
+        resizeFix();
+    });
+});
+</script>
 </body>
 </html>
