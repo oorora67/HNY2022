@@ -41,20 +41,20 @@ html, body {
   /* 文字が大きい方がアニメーションが綺麗なので50pxを指定 */
   font-size: 50px;
   /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dasharray: 400%;
+  stroke-dasharray: 1000%;
   /* 線が細いほうがアニメーションが綺麗なので0.5pxを指定 */
   stroke-width: 1px;
-  stroke-dashoffset: 400%;
+  stroke-dashoffset: 1000%;
   fill:transparent;
-  -webkit-animation: stroke-anim0 2s 4s linear both;
-  animation: stroke-anim0 2s 4s linear both;
+  -webkit-animation: stroke-anim0 2s 4s ease-in both;
+  animation: stroke-anim0 2s 4s ease-in both;
   stroke-dashoffset: 0%;
 }
 
 @-webkit-keyframes stroke-anim0 {
 0% {
   /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dashoffset: 400%;
+  stroke-dashoffset: 1000%;
   fill:transparent;
 }
 50% {
@@ -73,7 +73,7 @@ html, body {
 @keyframes stroke-anim0 {
 0% {
   /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dashoffset: 400%;
+  stroke-dashoffset: 1000%;
   fill:transparent;
 }
 50% {
@@ -109,17 +109,17 @@ html, body {
   /* 文字が大きい方がアニメーションが綺麗なので50pxを指定 */
   font-size: 200px;
   /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dasharray: 400%;
+  stroke-dasharray: 1000%;
   /* 線が細いほうがアニメーションが綺麗なので0.5pxを指定 */
   stroke-width: 3px;
-  -webkit-animation: stroke-anim1 4s linear forwards;
-  animation: stroke-anim1 4s linear forwards;
+  -webkit-animation: stroke-anim1 4s ease-in forwards;
+  animation: stroke-anim1 4s ease-in forwards;
 }
 
 @-webkit-keyframes stroke-anim1 {
 0% {
   /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dashoffset: 400%;
+  stroke-dashoffset: 1000%;
   fill:transparent;
 }
 50% {
@@ -137,7 +137,7 @@ html, body {
 @keyframes stroke-anim1 {
 0% {
   /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dashoffset: 400%;
+  stroke-dashoffset: 1000%;
   fill:transparent;
 }
 50% {
@@ -179,7 +179,7 @@ html, body {
 @-webkit-keyframes stroke-anim2 {
 0% {
   /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dashoffset: 400%;
+  stroke-dashoffset: 1000%;
   fill:transparent;
 }
 50% {
@@ -197,7 +197,7 @@ html, body {
 @keyframes stroke-anim2 {
 0% {
   /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dashoffset: 400%;
+  stroke-dashoffset: 1000%;
   fill:transparent;
 }
 50% {
