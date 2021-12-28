@@ -31,14 +31,14 @@ html, body {
   left: 0;
   right: 0;
   margin: auto auto;
-  transform: translateY(-50%);
+  transform: translateY(-70%);
 }
 .text0-1 {
   /* 色はお好みで */
   stroke: black;
   font-family: "Yuji Syuku";
   /* 色はお好みで */
-  fill: yellow;
+  fill: red;
   /* 文字が大きい方がアニメーションが綺麗なので50pxを指定 */
   font-size: 50px;
   /* 100%だと最後まで表示されないので多めに設定する */
@@ -47,8 +47,8 @@ html, body {
   stroke-width: 1px;
   stroke-dashoffset: 400%;
   fill:transparent;
-  -webkit-animation:  2s stroke-anim0 5s linear both;
-  animation: 2s stroke-anim0 5s linear both;
+  -webkit-animation: stroke-anim0 2s 4s linear both;
+  animation: stroke-anim0 2s 4s linear both;
   stroke-dashoffset: 0%;
 }
 
@@ -67,7 +67,7 @@ html, body {
 }
 100% {
   stroke-dashoffset: 0%;
-  fill:yellow;
+  fill:red;
 }
 }
 
@@ -85,12 +85,9 @@ html, body {
   fill:transparent;
 }
 100% {
-  fill:yellow;
+  fill:red;
 }
 }
-
-
-
 
 .text1{
 	position: absolute;
@@ -101,6 +98,7 @@ html, body {
   left: 0;
   right: 0;
   margin: auto auto;
+  transform: translateY(-45%);
 }
 .text1-1 {
   /* 色はお好みで */
@@ -114,8 +112,8 @@ html, body {
   stroke-dasharray: 400%;
   /* 線が細いほうがアニメーションが綺麗なので0.5pxを指定 */
   stroke-width: 3px;
-  -webkit-animation: stroke-anim1 5s linear forwards;
-  animation: stroke-anim1 5s linear forwards;
+  -webkit-animation: stroke-anim1 4s linear forwards;
+  animation: stroke-anim1 4s linear forwards;
 }
 
 @-webkit-keyframes stroke-anim1 {
@@ -153,3 +151,155 @@ html, body {
   fill:yellow;
 }
 }
+
+.text2{
+	position: absolute;
+  width: 50vmin;
+  height: 30vmin;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+  transform: translateY(60%);
+}
+.text2-1 {
+  /* 色はお好みで */
+  font-family: "Yuji Syuku";
+  /* 色はお好みで */
+  fill:transparent;
+  /* 文字が大きい方がアニメーションが綺麗なので50pxを指定 */
+  font-size: 20px;
+  /* 100%だと最後まで表示されないので多めに設定する */
+  -webkit-animation: stroke-anim2 2s 6s linear both;
+  animation: stroke-anim2 2s 6s linear both;
+}
+
+@-webkit-keyframes stroke-anim2 {
+0% {
+  /* 100%だと最後まで表示されないので多めに設定する */
+  stroke-dashoffset: 400%;
+  fill:transparent;
+}
+50% {
+  fill:transparent;
+}
+80% {
+  stroke-dashoffset: 0%;
+  fill:transparent;
+}
+100% {
+  fill:black;
+}
+}
+
+@keyframes stroke-anim2 {
+0% {
+  /* 100%だと最後まで表示されないので多めに設定する */
+  stroke-dashoffset: 400%;
+  fill:transparent;
+}
+50% {
+  fill:transparent;
+}
+80% {
+  stroke-dashoffset: 0%;
+  fill:transparent;
+}
+100% {
+  fill:black;
+}
+}
+.text3{
+	position: absolute;
+  width: 50vmin;
+  height: 30vmin;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+  transform: translateY(100%);
+}
+.text3-1 {
+  /* 色はお好みで */
+  font-family: "Yuji Syuku";
+  /* 色はお好みで */
+  fill:transparent;
+  /* 文字が大きい方がアニメーションが綺麗なので50pxを指定 */
+  font-size: 25px;
+  /* 100%だと最後まで表示されないので多めに設定する */
+  -webkit-animation: stroke-anim3 1s 9s linear both;
+  animation: stroke-anim3 1s 9s linear both;
+}
+
+@-webkit-keyframes stroke-anim3 {
+0% {
+  /* 100%だと最後まで表示されないので多めに設定する */
+  fill:transparent;
+}
+10% {
+  fill:transparent;
+}
+100% {
+  fill:black;
+}
+}
+
+@keyframes stroke-anim3 {
+0% {
+  /* 100%だと最後まで表示されないので多めに設定する */
+  fill:transparent;
+}
+10% {
+  fill:transparent;
+}
+100% {
+  fill:black;
+}
+}
+
+.obj0{
+	position: absolute;
+  width: 8vmin;
+  height: 8vmin;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+  transform: translate( 260%, 220%);
+}
+.obj0-1 {
+  width: 100%;
+  height: 100%;
+  /* 色はお好みで */
+  -webkit-animation: stroke-anim4 1s 11s linear both;
+  animation: stroke-anim4 1s 11s linear both;
+}
+
+@-webkit-keyframes stroke-anim4 {
+0% {
+  /* 100%だと最後まで表示されないので多めに設定する */
+  opacity: 0%;
+}
+10% {
+  opacity: 0%;
+}
+100% {
+  opacity: 100%;
+}
+}
+
+@keyframes stroke-anim4 {
+  0% {
+    /* 100%だと最後まで表示されないので多めに設定する */
+    opacity: 0%;
+  }
+  10% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+  }
