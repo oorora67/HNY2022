@@ -36,6 +36,7 @@ html, body {
   /* 色はお好みで */
   stroke: black;
   font-family: "Yuji Syuku";
+  font-style: normal;
   /* 色はお好みで */
   fill: red;
   /* 文字が大きい方がアニメーションが綺麗なので50pxを指定 */
@@ -103,6 +104,7 @@ html, body {
   /* 色はお好みで */
   stroke: black;
   font-family: "Yuji Syuku";
+  font-style: normal;
   /* 色はお好みで */
   fill: yellow;
   /* 文字が大きい方がアニメーションが綺麗なので50pxを指定 */
@@ -165,6 +167,7 @@ html, body {
 .text2-1 {
   /* 色はお好みで */
   font-family: "Yuji Syuku";
+  font-style: normal;
   /* 色はお好みで */
   fill:transparent;
   /* 文字が大きい方がアニメーションが綺麗なので50pxを指定 */
@@ -223,6 +226,7 @@ html, body {
 .text3-1 {
   /* 色はお好みで */
   font-family: "Yuji Syuku";
+  font-style: normal;
   /* 色はお好みで */
   fill:transparent;
   /* 文字が大きい方がアニメーションが綺麗なので50pxを指定 */
