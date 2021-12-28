@@ -13,8 +13,7 @@ html, body {
 }
 .bg{
     position: absolute;
-    width: min(100vw, 100vh);
-    height: min(100vw, 100vh);
+    object-fit: contain;
     top: 0;
     bottom: 0;
     left: 0;
