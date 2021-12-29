@@ -43,7 +43,7 @@ body {
     stroke-width: 1px;
     stroke-dasharray: 10000%;
     stroke-dashoffset: 10000%;
-    animation: stroke-anim0 2s 5s ease-in forwards;
+    animation: stroke-anim0 2s 5s ease-in both;
 }
 
 @keyframes stroke-anim0 {
@@ -85,6 +85,8 @@ body {
     fill: yellow;
     font-size: 200px;
     stroke-width: 3px;
+    stroke-dasharray: 10000%;
+    stroke-dashoffset: 10000%;
     animation: stroke-anim1 4s 1s ease-in both;
 }
 
