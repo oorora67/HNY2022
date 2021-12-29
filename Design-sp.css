@@ -18,7 +18,7 @@ html, body {
     left: 0;
     right: 0;
     margin: auto auto;
-  }
+}
 
 
 .text0{
@@ -33,16 +33,10 @@ html, body {
   transform: translateY(-550%);
 }
 .text0-1 {
-  /* 色はお好みで */
   stroke: black;
   font-family: "Yuji Syuku";
   font-style: normal;
-  /* 色はお好みで */
-  fill: red;
-  /* 文字が大きい方がアニメーションが綺麗なので50pxを指定 */
   font-size: 50px;
-  /* 100%だと最後まで表示されないので多めに設定する */
-  /* 線が細いほうがアニメーションが綺麗なので0.5pxを指定 */
   stroke-width: 1px;
   stroke-dasharray: 10000%;
   stroke-dashoffset: 10000%;
@@ -51,7 +45,6 @@ html, body {
 
   @keyframes stroke-anim0 {
   0% {
-    /* 100%だと最後まで表示されないので多めに設定する */
     stroke-dasharray: 0%,100%;
     fill:transparent;
   }
@@ -81,25 +74,19 @@ html, body {
   transform: translateY(-20%);
 }
 .text1-1 {
-  /* 色はお好みで */
   stroke: black;
   font-family: "Yuji Syuku";
   font-style: normal;
   stroke-linecap: square;
   stroke-linejoin: round;
-  /* 色はお好みで */
   fill: yellow;
-  /* 文字が大きい方がアニメーションが綺麗なので50pxを指定 */
   font-size: 200px;
-  /* 100%だと最後まで表示されないので多めに設定する */
-  /* 線が細いほうがアニメーションが綺麗なので0.5pxを指定 */
   stroke-width: 3px;
   animation: stroke-anim1 4s 1s ease-in both;
 }
 
 @keyframes stroke-anim1 {
 0% {
-  /* 100%だと最後まで表示されないので多めに設定する */
   stroke-dasharray: 0%,1000%;
   fill:transparent;
 }
@@ -128,20 +115,15 @@ html, body {
   transform: translateY(200%);
 }
 .text2-1 {
-  /* 色はお好みで */
   font-family: "Yuji Syuku";
   font-style: normal;
-  /* 色はお好みで */
   fill:transparent;
-  /* 文字が大きい方がアニメーションが綺麗なので50pxを指定 */
   font-size: 20px;
-  /* 100%だと最後まで表示されないので多めに設定する */
   animation: stroke-anim2 2s 6s linear both;
 }
 
 @keyframes stroke-anim2 {
 0% {
-  /* 100%だと最後まで表示されないので多めに設定する */
   stroke-dashoffset: 1000%;
   fill:transparent;
 }
@@ -168,20 +150,15 @@ html, body {
   transform: translateY(750%);
 }
 .text3-1 {
-  /* 色はお好みで */
   font-family: "Yuji Syuku";
   font-style: normal;
-  /* 色はお好みで */
   fill:transparent;
-  /* 文字が大きい方がアニメーションが綺麗なので50pxを指定 */
   font-size: 25px;
-  /* 100%だと最後まで表示されないので多めに設定する */
   animation: stroke-anim3 1s 9s linear both;
 }
 
 @keyframes stroke-anim3 {
 0% {
-  /* 100%だと最後まで表示されないので多めに設定する */
   fill:transparent;
 }
 10% {
@@ -206,13 +183,11 @@ html, body {
 .obj0-1 {
   width: 100%;
   height: 100%;
-  /* 色はお好みで */
   animation: stroke-anim4 1s 11s linear both;
 }
 
 @keyframes stroke-anim4 {
   0% {
-    /* 100%だと最後まで表示されないので多めに設定する */
     opacity: 0%;
   }
   10% {
