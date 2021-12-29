@@ -120,18 +120,18 @@ html, body {
 @-webkit-keyframes stroke-anim1 {
 0% {
   /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dasharray: 0%,500%;
+  stroke-dasharray: 0%,1000%;
   fill:transparent;
 }
 50% {
   fill:transparent;
 }
 90% {
-  stroke-dasharray: 500%,0%;
+  stroke-dasharray: 1000%,0%;
   fill:transparent;
 }
 100% {
-  stroke-dasharray: 500%,0%;
+  stroke-dasharray: 1000%,0%;
   fill:yellow;
 }
 }
