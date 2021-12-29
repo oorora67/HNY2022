@@ -44,7 +44,8 @@ html, body {
 
   /* 線が細いほうがアニメーションが綺麗なので0.5pxを指定 */
   stroke-width: 1px;
-  fill:transparent;
+  stroke-dasharray: 10000%;
+  stroke-dashoffset: 10000%;
   animation: stroke-anim0 2s 5s ease-in both;
 }
 
