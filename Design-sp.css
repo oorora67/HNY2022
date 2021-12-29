@@ -113,7 +113,7 @@ html, body {
   /* 文字が大きい方がアニメーションが綺麗なので50pxを指定 */
   font-size: 200px;
   /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dasharray: 150vw;
+  stroke-dasharray: 750px;
   /* 線が細いほうがアニメーションが綺麗なので0.5pxを指定 */
   stroke-width: 3px;
   -webkit-animation: stroke-anim1 4s 0.1s ease-in both;
@@ -123,14 +123,14 @@ html, body {
 @-webkit-keyframes stroke-anim1 {
 0% {
   /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dashoffset: 150vw;
+  stroke-dashoffset: 750px;
   fill:transparent;
 }
 50% {
   fill:transparent;
 }
 80% {
-  stroke-dashoffset: 0vw;
+  stroke-dashoffset: 0px;
   fill:transparent;
 }
 100% {
@@ -141,14 +141,14 @@ html, body {
 @keyframes stroke-anim1 {
 0% {
   /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dashoffset: 150vw;
+  stroke-dashoffset: 750px;
   fill:transparent;
 }
 50% {
   fill:transparent;
 }
 80% {
-  stroke-dashoffset: 0vw;
+  stroke-dashoffset: 0px;
   fill:transparent;
 }
 100% {
