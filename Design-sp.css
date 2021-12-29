@@ -42,53 +42,49 @@ html, body {
   /* 文字が大きい方がアニメーションが綺麗なので50pxを指定 */
   font-size: 50px;
   /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dasharray: 100vw;
   /* 線が細いほうがアニメーションが綺麗なので0.5pxを指定 */
   stroke-width: 1px;
-  stroke-dashoffset: 100vw;
-  fill:transparent;
-  -webkit-animation: stroke-anim0 2s 4s ease-in both;
-  animation: stroke-anim0 2s 4s ease-in both;
-  stroke-dashoffset: 0%;
+  -webkit-animation: stroke-anim0 20s 4s ease-in both;
+  animation: stroke-anim0 20s 4s ease-in both;
 }
 
 @-webkit-keyframes stroke-anim0 {
-0% {
-  /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dashoffset: 100vw;
-  fill:transparent;
-}
-50% {
-  fill:transparent;
-}
-80% {
-  stroke-dashoffset: 0vw;
-  fill:transparent;
-}
-100% {
-  stroke-dashoffset: 0vw;
-  fill:red;
-}
-}
+  0% {
+    stroke-dasharray: 0%,100%;
+    /* 100%だと最後まで表示されないので多めに設定する */
+    fill:transparent;
+  }
+  50% {
+    fill:transparent;
+  }
+  80% {
+    stroke-dasharray: 100%,0%;
+    fill:transparent;
+  }
+  100% {
+    stroke-dasharray: 100%,0%;
+    fill:red;
+  }
+  }
 
-@keyframes stroke-anim0 {
-0% {
-  /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dashoffset: 100vw;
-  fill:transparent;
-}
-50% {
-  fill:transparent;
-}
-80% {
-  stroke-dashoffset: 0vw;
-  fill:transparent;
-}
-100% {
-  stroke-dashoffset: 0vw;
-  fill:red;
-}
-}
+  @keyframes stroke-anim0 {
+  0% {
+    /* 100%だと最後まで表示されないので多めに設定する */
+    stroke-dasharray: 0%,100%;
+    fill:transparent;
+  }
+  50% {
+    fill:transparent;
+  }
+  80% {
+    stroke-dasharray: 100%,0%;
+    fill:transparent;
+  }
+  100% {
+    stroke-dasharray: 100%,0%;
+    fill:red;
+  }
+  }
 
 .text1{
 	position: absolute;
