@@ -123,14 +123,14 @@ html, body {
 @-webkit-keyframes stroke-anim1 {
 0% {
   /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dashoffset: 750px;
+  stroke-dasharray: 0%,500%;
   fill:transparent;
 }
 50% {
   fill:transparent;
 }
 80% {
-  stroke-dashoffset: 0px;
+  stroke-dasharray: 500%,0%;
   fill:transparent;
 }
 100% {
@@ -141,14 +141,14 @@ html, body {
 @keyframes stroke-anim1 {
 0% {
   /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dashoffset: 750px;
+  stroke-dasharray: 0%,500%;
   fill:transparent;
 }
 50% {
   fill:transparent;
 }
 80% {
-  stroke-dashoffset: 0px;
+  stroke-dasharray: 500%,0%;
   fill:transparent;
 }
 100% {
