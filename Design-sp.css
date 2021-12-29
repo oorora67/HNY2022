@@ -42,10 +42,10 @@ html, body {
   /* 文字が大きい方がアニメーションが綺麗なので50pxを指定 */
   font-size: 50px;
   /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dasharray: 1000%;
+  stroke-dasharray: 100vw;
   /* 線が細いほうがアニメーションが綺麗なので0.5pxを指定 */
   stroke-width: 1px;
-  stroke-dashoffset: 1000%;
+  stroke-dashoffset: 100vw;
   fill:transparent;
   -webkit-animation: stroke-anim0 2s 4s ease-in both;
   animation: stroke-anim0 2s 4s ease-in both;
@@ -55,18 +55,18 @@ html, body {
 @-webkit-keyframes stroke-anim0 {
 0% {
   /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dashoffset: 1000%;
+  stroke-dashoffset: 100vw;
   fill:transparent;
 }
 50% {
   fill:transparent;
 }
 80% {
-  stroke-dashoffset: 0%;
+  stroke-dashoffset: 0vw;
   fill:transparent;
 }
 100% {
-  stroke-dashoffset: 0%;
+  stroke-dashoffset: 0vw;
   fill:red;
 }
 }
@@ -74,17 +74,18 @@ html, body {
 @keyframes stroke-anim0 {
 0% {
   /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dashoffset: 1000%;
+  stroke-dashoffset: 100vw;
   fill:transparent;
 }
 50% {
   fill:transparent;
 }
 80% {
-  stroke-dashoffset: 0%;
+  stroke-dashoffset: 0vw;
   fill:transparent;
 }
 100% {
+  stroke-dashoffset: 0vw;
   fill:red;
 }
 }
@@ -105,12 +106,14 @@ html, body {
   stroke: black;
   font-family: "Yuji Syuku";
   font-style: normal;
+  stroke-linecap: square;
+  stroke-linejoin: round;
   /* 色はお好みで */
   fill: yellow;
   /* 文字が大きい方がアニメーションが綺麗なので50pxを指定 */
   font-size: 200px;
   /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dasharray: 2200%;
+  stroke-dasharray: 150vw;
   /* 線が細いほうがアニメーションが綺麗なので0.5pxを指定 */
   stroke-width: 3px;
   -webkit-animation: stroke-anim1 4s 0.1s ease-in both;
@@ -120,14 +123,14 @@ html, body {
 @-webkit-keyframes stroke-anim1 {
 0% {
   /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dashoffset: 2200%;
+  stroke-dashoffset: 150vw;
   fill:transparent;
 }
 50% {
   fill:transparent;
 }
 80% {
-  stroke-dashoffset: 0%;
+  stroke-dashoffset: 0vw;
   fill:transparent;
 }
 100% {
@@ -138,14 +141,14 @@ html, body {
 @keyframes stroke-anim1 {
 0% {
   /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dashoffset: 2200%;
+  stroke-dashoffset: 150vw;
   fill:transparent;
 }
 50% {
   fill:transparent;
 }
 80% {
-  stroke-dashoffset: 0%;
+  stroke-dashoffset: 0vw;
   fill:transparent;
 }
 100% {

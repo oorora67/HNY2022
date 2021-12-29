@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 </head>
 <body>
 <main>
@@ -29,7 +30,7 @@
     </div>
     <div class="text1">
       <svg viewBox="0 0 200 200">
-        <text class="text1-1" x="50%" y="45%" text-anchor="middle" dominant-baseline="central">寅</text>
+        <text id="text1-1" class="text1-1" x="50%" y="45%" text-anchor="middle" dominant-baseline="central">寅</text>
         <rect x="0" y="0" width="200" height="200" fill="none" stroke="#12b886"></rect>
         <line x1="0" y1="100" x2="200" y2="100" stroke="Green" stroke-width="1"/>
         <line x1="100" y1="0" x2="100" y2="200" stroke="Green" stroke-width="1"/>
@@ -95,6 +96,13 @@
     window.addEventListener('resize', function () {
         resizeFix();
     });
+});
+$(function(){
+	//svg 要素の id 属性の値を指定
+let rect = document.getElementById('text1-1');
+//要素の周囲の長さ
+let length = rect.getTotalLength();
+console.log(length);  //600 上記の rect 要素の場合
 });
 </script>
 </body>
