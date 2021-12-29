@@ -133,6 +133,7 @@ html, body {
   fill:transparent;
 }
 100% {
+  stroke-dasharray: 500%,0%;
   fill:yellow;
 }
 }
@@ -151,6 +152,7 @@ html, body {
   fill:transparent;
 }
 100% {
+  stroke-dasharray: 500%,0%;
   fill:yellow;
 }
 }
