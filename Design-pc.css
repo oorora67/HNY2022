@@ -46,7 +46,7 @@ html, body {
   stroke-width: 1px;
   stroke-dasharray: 10000%;
   stroke-dashoffset: 10000%;
-  animation: stroke-anim0 2s 5s ease-in both;
+  animation: stroke-anim0 2s 5s ease-in forwards;
 }
 
 @keyframes stroke-anim0 {
