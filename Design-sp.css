@@ -41,13 +41,13 @@ body {
     font-style: normal;
     font-size: 50px;
     stroke-width: 1px;
-    stroke-dasharray: 10000%;
-    stroke-dashoffset: 10000%;
-    animation: stroke-anim0 2s 5s ease-in both;
+    opacity: 0%;
+    animation: stroke-anim0 2s 5s ease-in forwards;
 }
 
 @keyframes stroke-anim0 {
     0% {
+        opacity: 100%;
         stroke-dasharray: 0%, 100%;
         fill: transparent;
     }
@@ -59,7 +59,7 @@ body {
         fill: transparent;
     }
     100% {
-        stroke-width: 1px;
+        opacity: 100%;
         stroke-dasharray: 100%, 0%;
         fill: red;
     }
@@ -86,13 +86,13 @@ body {
     fill: yellow;
     font-size: 200px;
     stroke-width: 3px;
-    stroke-dasharray: 10000%;
-    stroke-dashoffset: 10000%;
-    animation: stroke-anim1 4s 1s ease-in both;
+    opacity: 0%;
+    animation: stroke-anim1 4s 1s ease-in forwards;
 }
 
 @keyframes stroke-anim1 {
     0% {
+        opacity: 100%;
         stroke-dasharray: 0%, 1000%;
         fill: transparent;
     }
@@ -104,6 +104,7 @@ body {
         fill: transparent;
     }
     100% {
+        opacity: 100%;
         stroke-dasharray: 1000%, 0%;
         fill: yellow;
     }
