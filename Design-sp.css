@@ -44,8 +44,8 @@ html, body {
   /* 100%だと最後まで表示されないので多めに設定する */
   /* 線が細いほうがアニメーションが綺麗なので0.5pxを指定 */
   stroke-width: 1px;
-  -webkit-animation: stroke-anim0 2s 4s ease-in both;
-  animation: stroke-anim0 2s 4s ease-in both;
+  -webkit-animation: stroke-anim0 2s 5s ease-in both;
+  animation: stroke-anim0 2s 5s ease-in both;
 }
 
 @-webkit-keyframes stroke-anim0 {
@@ -111,8 +111,8 @@ html, body {
   /* 100%だと最後まで表示されないので多めに設定する */
   /* 線が細いほうがアニメーションが綺麗なので0.5pxを指定 */
   stroke-width: 3px;
-  -webkit-animation: stroke-anim1 4s 0.1s ease-in both;
-  animation: stroke-anim1 4s 0.1s ease-in both;
+  -webkit-animation: stroke-anim1 4s 1s ease-in both;
+  animation: stroke-anim1 4s 1s ease-in both;
 }
 
 @-webkit-keyframes stroke-anim1 {
