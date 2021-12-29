@@ -45,27 +45,7 @@ html, body {
   /* 線が細いほうがアニメーションが綺麗なので0.5pxを指定 */
   stroke-width: 1px;
   fill:transparent;
-  -webkit-animation: stroke-anim0 2s 5s ease-in both;
   animation: stroke-anim0 2s 5s ease-in both;
-}
-
-@-webkit-keyframes stroke-anim0 {
-0% {
-  stroke-dasharray: 0%,100%;
-  /* 100%だと最後まで表示されないので多めに設定する */
-  fill:transparent;
-}
-50% {
-  fill:transparent;
-}
-80% {
-  stroke-dasharray: 100%,0%;
-  fill:transparent;
-}
-100% {
-  stroke-dasharray: 100%,0%;
-  fill:red;
-}
 }
 
 @keyframes stroke-anim0 {
@@ -113,44 +93,24 @@ html, body {
 
   /* 線が細いほうがアニメーションが綺麗なので0.5pxを指定 */
   stroke-width: 3px;
-  -webkit-animation: stroke-anim1 4s 1s ease-in both;
   animation: stroke-anim1 4s 1s ease-in both;
-}
-
-@-webkit-keyframes stroke-anim1 {
-0% {
-  /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dasharray: 0%,2000%;
-  fill:transparent;
-}
-50% {
-  fill:transparent;
-}
-90% {
-  stroke-dasharray: 2000%,0%;
-  fill:transparent;
-}
-100% {
-  stroke-dasharray: 2000%,0%;
-  fill:yellow;
-}
 }
 
 @keyframes stroke-anim1 {
 0% {
   /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dasharray: 0%,200%;
+  stroke-dasharray: 0%,500%;
   fill:transparent;
 }
 50% {
   fill:transparent;
 }
 90% {
-  stroke-dasharray: 200%,0%;
+  stroke-dasharray: 500%,0%;
   fill:transparent;
 }
 100% {
-  stroke-dasharray: 200%,0%;
+  stroke-dasharray: 500%,0%;
   fill:yellow;
 }
 }
@@ -175,26 +135,7 @@ html, body {
   /* 文字が大きい方がアニメーションが綺麗なので50pxを指定 */
   font-size: 20px;
   /* 100%だと最後まで表示されないので多めに設定する */
-  -webkit-animation: stroke-anim2 2s 6s linear both;
   animation: stroke-anim2 2s 6s linear both;
-}
-
-@-webkit-keyframes stroke-anim2 {
-0% {
-  /* 100%だと最後まで表示されないので多めに設定する */
-  stroke-dashoffset: 1000%;
-  fill:transparent;
-}
-50% {
-  fill:transparent;
-}
-80% {
-  stroke-dashoffset: 0%;
-  fill:transparent;
-}
-100% {
-  fill:black;
-}
 }
 
 @keyframes stroke-anim2 {
@@ -234,21 +175,7 @@ html, body {
   /* 文字が大きい方がアニメーションが綺麗なので50pxを指定 */
   font-size: 25px;
   /* 100%だと最後まで表示されないので多めに設定する */
-  -webkit-animation: stroke-anim3 1s 9s linear both;
   animation: stroke-anim3 1s 9s linear both;
-}
-
-@-webkit-keyframes stroke-anim3 {
-0% {
-  /* 100%だと最後まで表示されないので多めに設定する */
-  fill:transparent;
-}
-10% {
-  fill:transparent;
-}
-100% {
-  fill:black;
-}
 }
 
 @keyframes stroke-anim3 {
@@ -279,21 +206,7 @@ html, body {
   width: 100%;
   height: 100%;
   /* 色はお好みで */
-  -webkit-animation: stroke-anim4 1s 11s linear both;
   animation: stroke-anim4 1s 11s linear both;
-}
-
-@-webkit-keyframes stroke-anim4 {
-0% {
-  /* 100%だと最後まで表示されないので多めに設定する */
-  opacity: 0%;
-}
-10% {
-  opacity: 0%;
-}
-100% {
-  opacity: 100%;
-}
 }
 
 @keyframes stroke-anim4 {
